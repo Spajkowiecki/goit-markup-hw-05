@@ -36,13 +36,16 @@ STEP 3: Poukładaj elementy
 /* USTAWIENIE STANDARDOWYCH DANYCH */
 
 body {
-  width: 1600px;
   font-family: "Roboto", "Raleway", sans-serif;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--main-font-color);
   background-color: var(--logo-white);
   box-shadow: 3px 3px 5px rgb(136, 136, 136);
+}
+
+.main_container {
+  width: 1600px;
 }
 
 /*
@@ -579,6 +582,7 @@ body {
 
 .modal-backdrop {
   position: absolute;
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -586,8 +590,6 @@ body {
 .modal {
   z-index: 3;
   position: absolute;
-  top: 50%;
-  left: 50%;
   background-color: var(--logo-white);
   width: 528px;
   height: 581px;
