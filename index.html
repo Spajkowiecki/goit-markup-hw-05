@@ -22,12 +22,18 @@
 </head>
 
 <body class="center">
+    <div class="modal-backdrop container is-hidden" data-modal="">
+        <div class="modal">
+            <button type="button" class="close-button" data-modal-close="">X
+            </button>
+        </div>
+    </div>
     <header>
-        <div class="navigator -medium flex">
+        <div class="navigator center -medium flex">
             <a class="nav_logo bold l-1" href="index.html"><span>Web</span>Studio</a>
-            <nav class="navigation ">
+            <nav class="navigation">
                 <ul class="nav-core flex">
-                    <li><a class="nav_link" href="agencja.html">Agencja</a></li>
+                    <li><a class="nav_link activated" href="agencja.html">Agencja</a></li>
                     <li><a class="nav_link" href="portfolio.html">Portfolio</a></li>
                     <li><a class="nav_link" href="kontakt.html">Kontakt</a></li>
                 </ul>
@@ -42,7 +48,8 @@
                             </svg>
                         </div>
                         info@devstudio.com
-                    </a></li>
+                    </a>
+                </li>
                 <li><a class="nav_link icons" href="tel:+48111111111">
                         <div class="nav-icons">
                             <svg width="16" height="12">
@@ -52,14 +59,15 @@
                             </svg>
                         </div>
                         +48 111 111 111
-                    </a></li>
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
     <!-- DIV: HEADING BAR -->
     <div class="hero flex">
         <h1 class="-black">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="-bold">Zamów usługe</button>
+        <button class="modal-btn -bold" type="button" data-modal-open="">Zamów usługe</button>
     </div>
     <!-- NASZE ATUTY -->
     <main class="sections">
@@ -130,11 +138,23 @@
             <h2 class="-bold">Czym się zajmujemy</h2>
             <ul class="flex-around">
                 <li>
-                    <img src="images/i1.jpg" width="370" height="294" alt="pisze na klawiaturze">
+                    <div class="image_poster">
+                        <img src="images/i1.jpg" width="370" height="294" alt="pisze na klawiaturze">
+                        <p class="-bold">Aplikacje komputerowe</p>
+                    </div>
                 </li>
-                <li><img src="images/i2.jpg" width="370" height="294" alt="sprawdza wygląd strony na telefonach">
+                <li>
+                    <div class="image_poster">
+                        <img src="images/i2.jpg" width="370" height="294" alt="sprawdza wygląd strony na telefonach">
+                        <p class="-bold">Aplikacje Mobilne</p>
+                    </div>
                 </li>
-                <li><img src="images/i3.jpg" width="370" height="294" alt="wybiera palete kolorow"></li>
+                <li>
+                    <div class="image_poster">
+                        <img src="images/i3.jpg" width="370" height="294" alt="wybiera palete kolorow">
+                        <p class="-bold">Rozwiązania Graficzne</p>
+                    </div>
+                </li>
             </ul>
         </section>
         <!-- NASZ ZESPOL -->
@@ -380,6 +400,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
