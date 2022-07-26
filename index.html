@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
+    <title>WebStudio P5</title>
 
     <!-- Normalizator -->
     <link rel="stylesheet"
@@ -22,28 +22,19 @@
 </head>
 
 <body class="center">
-    <!-- OKNO MODALNE -->
-    <div class="modal-backdrop is-hidden" data-modal="">
-        <div class="modal">
-            <button type="button" class="close-button" data-modal-close="">X
-            </button>
-        </div>
-    </div>
-    <!-- KONIEC OKNA MODALNEGO -->
     <header>
-        <div class="navigator center -medium flex">
+        <div class="navigator -medium flex">
             <a class="nav_logo bold l-1" href="index.html"><span>Web</span>Studio</a>
-            <nav class="navigation">
+            <nav class="navigation ">
                 <ul class="nav-core flex">
-                    <li><a class="nav_link activated" href="agencja.html">Agencja</a></li>
+                    <li><a class="nav_link" href="agencja.html">Agencja</a></li>
                     <li><a class="nav_link" href="portfolio.html">Portfolio</a></li>
                     <li><a class="nav_link" href="kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
-            <!-- NAWIGACJA(PRAWA STRONA: DANE KONTAKTOWE) -->
             <ul class="nav-contact flex">
                 <li><a class="nav_link icons" href="mailto:info@devstudio.com">
-                        <div class="nav-icons">
+                        <div class="nav_icons">
                             <svg width="16" height="12">
                                 <use href="images/icons.svg#envelop">
 
@@ -51,10 +42,9 @@
                             </svg>
                         </div>
                         info@devstudio.com
-                    </a>
-                </li>
+                    </a></li>
                 <li><a class="nav_link icons" href="tel:+48111111111">
-                        <div class="nav-icons">
+                        <div class="nav_icons">
                             <svg width="16" height="12">
                                 <use href="images/icons.svg#mobile">
 
@@ -62,17 +52,15 @@
                             </svg>
                         </div>
                         +48 111 111 111
-                    </a>
-                </li>
+                    </a></li>
             </ul>
-            <!-- KONIEC NAWIGACJI(PRAWA STRONA: DANE KONTAKTOWE) -->
         </div>
     </header>
     <!-- DIV: HEADING BAR -->
     <div class="hero__bgimage">
         <div class="hero flex">
             <h1 class="-black">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button class="modal-btn -bold" type="button" data-modal-open="">Zamów usługe</button>
+            <button type="button" class="-bold">Zamów usługe</button>
         </div>
     </div>
     <!-- NASZE ATUTY -->
@@ -144,23 +132,11 @@
             <h2 class="-bold">Czym się zajmujemy</h2>
             <ul class="flex-around">
                 <li>
-                    <div class="image_poster">
-                        <img src="images/i1.jpg" width="370" height="294" alt="pisze na klawiaturze">
-                        <p class="-bold">Aplikacje komputerowe</p>
-                    </div>
+                    <img src="images/i1.jpg" width="370" height="294" alt="pisze na klawiaturze">
                 </li>
-                <li>
-                    <div class="image_poster">
-                        <img src="images/i2.jpg" width="370" height="294" alt="sprawdza wygląd strony na telefonach">
-                        <p class="-bold">Aplikacje Mobilne</p>
-                    </div>
+                <li><img src="images/i2.jpg" width="370" height="294" alt="sprawdza wygląd strony na telefonach">
                 </li>
-                <li>
-                    <div class="image_poster">
-                        <img src="images/i3.jpg" width="370" height="294" alt="wybiera palete kolorow">
-                        <p class="-bold">Rozwiązania Graficzne</p>
-                    </div>
-                </li>
+                <li><img src="images/i3.jpg" width="370" height="294" alt="wybiera palete kolorow"></li>
             </ul>
         </section>
         <!-- NASZ ZESPOL -->
@@ -176,25 +152,33 @@
                                 <p>Product Designer</p>
                                 <div class="poster_svg container">
                                     <ul class="flex-around">
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#instagram"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#instagram"></use>
+                                                </svg>
+                                            </a>
                                         </li>
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#twitter"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#twitter"></use>
+                                                </svg>
+                                            </a>
                                         </li>
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#facebook"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#facebook"></use>
+                                                </svg>
+                                            </a>
                                         </li>
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#linkedin2"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#linkedin2"></use>
+                                                </svg>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -209,25 +193,33 @@
                                 <p>Frontend Developer</p>
                                 <div class="poster_svg container">
                                     <ul class="flex-around">
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#instagram"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#instagram"></use>
+                                                </svg>
+                                            </a>
                                         </li>
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#twitter"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#twitter"></use>
+                                                </svg>
+                                            </a>
                                         </li>
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#facebook"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#facebook"></use>
+                                                </svg>
+                                            </a>
                                         </li>
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#linkedin2"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#linkedin2"></use>
+                                                </svg>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -242,25 +234,33 @@
                                 <p>Marketing</p>
                                 <div class="poster_svg container">
                                     <ul class="flex-around">
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#instagram"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#instagram"></use>
+                                                </svg>
+                                            </a>
                                         </li>
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#twitter"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#twitter"></use>
+                                                </svg>
+                                            </a>
                                         </li>
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#facebook"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#facebook"></use>
+                                                </svg>
+                                            </a>
                                         </li>
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#linkedin2"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#linkedin2"></use>
+                                                </svg>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -275,25 +275,33 @@
                                 <p>UI Designer</p>
                                 <div class="poster_svg container">
                                     <ul class="flex-around">
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#instagram"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#instagram"></use>
+                                                </svg>
+                                            </a>
                                         </li>
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#twitter"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#twitter"></use>
+                                                </svg>
+                                            </a>
                                         </li>
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#facebook"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#facebook"></use>
+                                                </svg>
+                                            </a>
                                         </li>
-                                        <li class="poster_svg_item">
-                                            <svg width="20" height="20">
-                                                <use href="images/icons.svg#linkedin2"></use>
-                                            </svg>
+                                        <li>
+                                            <a class="poster_svg_item" href="">
+                                                <svg width="20" height="20">
+                                                    <use href="images/icons.svg#linkedin2"></use>
+                                                </svg>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -307,57 +315,57 @@
             <h2 class="-bold">Nasi klienci</h2>
             <ul class="flex-around container">
                 <li>
-                    <div class="clients_svg">
-                        <div clas="clients_svg_box flex">
+                    <div>
+                        <a class="clients_svg" href="">
                             <svg width="41" height="46.7">
                                 <use href="images/icons.svg#company_1"></use>
                             </svg>
-                        </div>
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div class="clients_svg">
-                        <div clas="clients_svg_box flex">
+                    <div>
+                        <a class="clients_svg" href="">
                             <svg width="40" height="52">
                                 <use href="images/icons.svg#company_2"></use>
                             </svg>
-                        </div>
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div class="clients_svg">
-                        <div clas="clients_svg_box flex">
+                    <div>
+                        <a class="clients_svg" href="">
                             <svg width="43.46" height="41.18">
                                 <use href="images/icons.svg#company_3"></use>
                             </svg>
-                        </div>
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div class="clients_svg">
-                        <div clas="clients_svg_box flex">
+                    <div>
+                        <a class="clients_svg" href="">
                             <svg width="84.44" height="40.62">
                                 <use href="images/icons.svg#company_4"></use>
                             </svg>
-                        </div>
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div class="clients_svg">
-                        <div clas="clients_svg_box flex">
+                    <div>
+                        <a class="clients_svg" href="">
                             <svg width="62.54" height="45.43">
                                 <use href="images/icons.svg#company_5"></use>
                             </svg>
-                        </div>
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div class="clients_svg">
-                        <div clas="clients_svg_box flex">
+                    <div>
+                        <a class="clients_svg" href="">
                             <svg width="93.79" height="43.93">
                                 <use href="images/icons.svg#company_6"></use>
                             </svg>
-                        </div>
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -380,25 +388,33 @@
                     <div class="footer_svg">
                         <p class="-bold">DOŁĄCZ DO NAS</p>
                         <ul class="flex-around join_socials">
-                            <li class="footer_svg_item">
-                                <svg width="20" height="20">
-                                    <use href="images/icons.svg#instagram"></use>
-                                </svg>
+                            <li>
+                                <a class="footer_svg_item" href="">
+                                    <svg width="20" height="20">
+                                        <use href="images/icons.svg#instagram"></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li class="footer_svg_item">
-                                <svg width="20" height="20">
-                                    <use href="images/icons.svg#twitter"></use>
-                                </svg>
+                                <a class="footer_svg_item" href="">
+                                    <svg width="20" height="20">
+                                        <use href="images/icons.svg#twitter"></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li class="footer_svg_item">
-                                <svg width="20" height="20">
-                                    <use href="images/icons.svg#facebook"></use>
-                                </svg>
+                                <a class="footer_svg_item" href="">
+                                    <svg width="20" height="20">
+                                        <use href="images/icons.svg#facebook"></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li class="footer_svg_item">
-                                <svg width="20" height="20">
-                                    <use href="images/icons.svg#linkedin2"></use>
-                                </svg>
+                                <a class="footer_svg_item" href="">
+                                    <svg width="20" height="20">
+                                        <use href="images/icons.svg#linkedin2"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -406,7 +422,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/modal.js"></script>
 </body>
 
 </html>
