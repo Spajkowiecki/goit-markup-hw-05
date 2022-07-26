@@ -533,10 +533,8 @@ body {
 /* FOOTER section */ /* FOOTER section */ /* FOOTER section */ /* FOOTER section */ /* FOOTER section */ /* FOOTER section */ /* FOOTER section */
 
 .footer_content {
-  display: flex;
-  align-items: center;
   background-color: var(--header-bg);
-  height: 252px;
+  padding: 60px 0px 60px 215px;
   padding-left: 30px;
 }
 
