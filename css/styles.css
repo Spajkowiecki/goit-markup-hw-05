@@ -163,7 +163,6 @@ body {
 .activated::after {
   height: 4px;
   position: absolute;
-  top: 0;
   right: 0;
   left: 0;
   top: 45.5px;
